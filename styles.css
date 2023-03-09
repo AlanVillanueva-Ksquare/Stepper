@@ -1,0 +1,126 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: rgb(62, 62, 62);
+    max-width: 300px;
+    max-height: 400px;
+
+}
+h1{
+    font-size: larger;
+}
+
+p{
+    font-size: 90%;
+    color: rgb(123, 123, 123);
+}
+
+.format{
+    display: grid;
+    height:100%;
+    grid-template-columns: 3fr 1fr;
+}
+.buttons{
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.stepper{
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    padding-left: 3%;
+    padding-right: 3%;
+    gap:1em
+}
+
+.step{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    box-sizing: border-box;
+    gap: 0.5em
+
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    height: 1.5em;
+    width: 1.5em;
+}
+.dividing-line {
+    border-style: dotted;
+    width: 3em;
+    border-radius: 16px;
+    border-color: rgb(169, 169, 169);
+    border-width: 0.1em;
+}
+
+.dividing-line.done {
+    border-style: solid;
+    border-color: rgb(21, 191, 140);
+}
+
+.done.circle{
+    background-color: rgb(21, 191, 140);
+    color: white;
+}
+
+.step-name1{
+    color: rgb(21, 191, 140);
+}
+
+.step-name2{
+    color: rgb(65, 17, 177);
+}
+
+.actual.circle{
+    background-color: rgb(65, 17, 177);
+    color: white;
+}
+select{
+    margin-top: 1%;
+    width: 97%;
+    padding: 1.5%;
+}
+
+.back{
+    background-color: white;
+    border-width: 1px;
+    border-color: rgb(233, 233, 233);
+    height: 25px;
+    width: 45px;
+    font-size: 11px;
+    border-radius: 4px;
+
+}
+
+.continue{
+    background-color: rgb(76, 1, 168);
+    border-width: 0;
+    color: white;
+    height: 25px;
+    width: 65px;
+    font-size: 11px;
+    border-radius: 4px;
+
+}
+label{
+    padding-bottom: 50%;
+}
